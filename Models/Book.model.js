@@ -11,17 +11,6 @@ const bookSchema=new mongoose.Schema({
 
 const bookModel=mongoose.model('book',bookSchema);
 
-{/*let seedBook=()=>{
-    let newBook=new bookModel({
-        title:"Book1",
-        description:"long book",
-        status:"sold",
-        email:"abc@gmail.com",
-
-
-    });
-    newBook.save();
-}
 
 let seedBook=()=>{
     let newBook=new bookModel({
@@ -32,11 +21,7 @@ let seedBook=()=>{
 
 
     });
-    newBook.save();
-}
-
-let seedBook=()=>{
-    let newBook=new bookModel({
+    let newBook2=new bookModel({
         title:"Book3",
         description:"long book",
         status:"available",
@@ -44,6 +29,17 @@ let seedBook=()=>{
 
 
     });
+    let newBook3=new bookModel({
+        title:"Book1",
+        description:"long book",
+        status:"sold",
+        email:"abc@gmail.com",
+
+
+    });
     newBook.save();
-}*/}
+    newBook2.save();
+    newBook3.save();
+}
+
 module.exports={seedBook,bookModel}
