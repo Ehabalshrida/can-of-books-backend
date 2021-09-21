@@ -11,8 +11,7 @@ const {seedBook}=require("./Models/Book.model");
 const bookcontroller=require("./controllers/book.controller")
 const MONGO_SERVER=process.env.MONGO_SERVER;
 
-mongoose.connect(`${MONGO_SERVER}/bookStore`,{useNewUrlParser: true, useUnifiedTopology: true});
-
+mongoose.connect(`${MONGO_SERVER}`,{useNewUrlParser: true, useUnifiedTopology: true})
 
 app.get('/seed-data',(req,res)=>{
         seedBook();
