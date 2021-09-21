@@ -9,7 +9,7 @@ const bookSchema=new mongoose.Schema({
     email:String,
 });
 
-const bookModel=mongoose.model('book',bookSchema);
+const bookModel=mongoose.model('Book2',bookSchema);
 
 
 let seedBook=()=>{
