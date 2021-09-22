@@ -4,9 +4,10 @@ const {bookModel}=require('../Models/Book.model')
 
 let createController = async (req,res)=>{
 
-    let bookData=req.Body;
+    let bookData=req.body;
+    console.log(bookData);
     let newBook=new bookModel(bookData);
-    newBook.save();
+    await newBook.save();
     await bookModel.find({}).then(data=>{res.status(200).json(data)});
 
 }

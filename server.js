@@ -11,7 +11,7 @@ const {seedBook}=require("./Models/Book.model");
 const bookcontroller=require("./controllers/book.controller")
 const MONGO_SERVER=process.env.MONGO_SERVER;
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
 const {createController}=require('./controllers/create.controller')
 const {deleteController}=require('./controllers/delete.controller')
 const{updateController}=require('./controllers/update.controller')
